@@ -2,6 +2,10 @@
 
 This is the frontend part of a full-stack blog application built using **Next.js**, **React 19**, **Redux Toolkit**, **Material UI**, and **TypeScript**. The app allows users to view, create, update, and delete blog posts, as well as add comments.
 
+## 📽️ Demo
+
+[Watch demo video](https://www.loom.com/share/98375a90e2e04f7299d248bcc2dc1445?sid=3c083be6-1c94-46b2-905f-590d0c237a2b)
+
 ## 🚀 Features
 
 * 📄 View all blog posts
