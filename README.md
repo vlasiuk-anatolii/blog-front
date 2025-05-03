@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Blog Frontend
 
-## Getting Started
+This is the frontend part of a full-stack blog application built using **Next.js**, **React 19**, **Redux Toolkit**, **Material UI**, and **TypeScript**. The app allows users to view, create, update, and delete blog posts, as well as add comments.
 
-First, run the development server:
+## 🚀 Features
+
+* 📄 View all blog posts
+* 🗒️ View a single post with comments
+* ✍️ Create a new post
+* ✏️ Edit an existing post
+* ❌ Delete a post
+* 💬 Add comments to a post
+* ✅ Client-side input validation
+* 🔔 Error message handling
+
+## 🧰 Tech Stack
+
+* **Next.js 15**
+* **React 19**
+* **Redux Toolkit**
+* **TypeScript**
+* **Material UI v7**
+* **Tailwind CSS**
+* **Emotion Styled Components**
+* **JWT Decode**
+* **lodash.debounce**
+
+## 📦 Installation
 
 ```bash
+git clone https://github.com/vlasiuk-anatolii/blog-front
+cd blog-front/front
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be available at [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env` file in the `front/` directory with the following content:
 
-## Learn More
+```env
+NEXT_PUBLIC_API_URL=http://localhost:3001
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+front/
+├── app/
+│ ├── auth/ // Authentication pages and logic
+│ ├── comments/ // Comment-related pages and logic
+│ ├── common/ // Shared components/utilities
+│ ├── header/ // Header layout and navigation
+│ ├── posts/ // Post-related pages (CRUD)
+│ ├── search/ // Search functionality
+│ ├── store/ // Redux store and slices
+│ ├── dark.theme.ts // Custom MUI dark theme
+│ ├── favicon.ico // Favicon for the app
+│ └── globals.css // Global CSS styles
+├── .next/ // Next.js build output (auto-generated)
+├── package.json // Project metadata and dependencies
+├── tailwind.config.js // Tailwind CSS configuration
+└── tsconfig.json // TypeScript configuration
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✅ Implemented
 
-## Deploy on Vercel
+* [x] Display all posts
+* [x] View a post with comments
+* [x] Create a new post
+* [x] Edit a post
+* [x] Delete a post
+* [x] Add comments to a post
+* [x] Client-side validation
+* [x] Error handling
+* [x] Search (basic)
+* [x] Responsive design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ➕ Optional Enhancements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* [ ] Pagination
+* [ ] Lite Mode
+
+## 📝 Notes
+
+* The backend should be running on `http://localhost:3001` or the address set in `NEXT_PUBLIC_API_URL`.
+* All forms include basic validation with helpful error messages.
+
+## 📄 License
+
+MIT © 2025 [Anatolii Vlasiuk](https://github.com/vlasiuk-anatolii)

@@ -1,0 +1,1 @@
+export const styleCard = "p-4 border-2 border-gray-800"
